@@ -32,7 +32,6 @@ nv.addGraph(function() {
             [1513077000, 30.497]
         ],
         "color": "#369",
-        "area": false
     }];
 
     d3.select('#chart svg')
