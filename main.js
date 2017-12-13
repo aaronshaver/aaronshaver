@@ -16,7 +16,7 @@ nv.addGraph(function() {
 
     chart.xAxis.tickFormat(
         function(d) {
-            return d3.time.format('%a %d @ %I:%M %p')(new Date(d));
+            return d3.time.format('%d %b %I:%M %p')(new Date(d));
         });
     chart.xAxis.rotateLabels(45);
     chart.xScale(d3.time.scale());

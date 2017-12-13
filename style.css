@@ -1,0 +1,19 @@
+html,
+body {
+    background-color: #333;
+    width: 85vw;
+    height:85vh;
+}
+p,
+h1 {
+    color: #69c;
+    font-family: sans-serif;
+}
+#chart svg {
+    width: 85vw;
+    height:85vh;
+}
+svg text {
+    fill: #aaa;
+    font-family: sans-serif;
+}
