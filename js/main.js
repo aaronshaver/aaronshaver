@@ -16,7 +16,6 @@
 
 nv.addGraph(function() {
   var chart = nv.models.lineChart()
-                .useInteractiveGuideline(true)  //We want nice looking tooltips and a guideline!
                 .x(function(d) {
                     return d[0] * 1000 // convert to milliseconds
                 })
@@ -44,7 +43,7 @@ nv.addGraph(function() {
     data = [{
         "key": "Station Pressure",
         "values": array,
-        "color": "#14a76c",
+        "color": "#45a29e",
         area: true
     }];
 

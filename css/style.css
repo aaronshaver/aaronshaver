@@ -1,19 +1,22 @@
+* {
+    font-family: 'Open Sans';
+}
 html,
 body {
-    background-color: #272727;
+    background-color: #222629;
     width: 95vw;
     height:93vh;
 }
-p,
+p, h2 {
+    color: #45a29e;
+}
 h1 {
-    color: #ff652f;
-    font-family: sans-serif;
+    color: #66fcf1;
 }
 #chart svg {
     width: 95vw;
     height:93vh;
 }
 svg text {
-    fill: #747474;
-    font-family: sans-serif;
+    fill: #c5c6c7;
 }
