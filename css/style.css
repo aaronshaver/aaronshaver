@@ -1,12 +1,12 @@
 html,
 body {
-    background-color: #333;
+    background-color: #272727;
     width: 85vw;
     height:85vh;
 }
 p,
 h1 {
-    color: #69c;
+    color: #ff652f;
     font-family: sans-serif;
 }
 #chart svg {
@@ -14,6 +14,6 @@ h1 {
     height:85vh;
 }
 svg text {
-    fill: #aaa;
+    fill: #747474;
     font-family: sans-serif;
 }

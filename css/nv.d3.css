@@ -21,7 +21,7 @@
 
 .nvd3 .nv-axis line {
     fill: none;
-    stroke: #e5e5e5;
+    stroke: #747474;
     shape-rendering: crispEdges;
 }
 
@@ -118,7 +118,7 @@
 .nvd3.nv-bullet .nv-measure:hover { fill-opacity: 1; }
 .nvd3.nv-bullet .nv-marker { stroke: #000; stroke-width: 2px; }
 .nvd3.nv-bullet .nv-markerTriangle { stroke: #000; fill: #fff; stroke-width: 1.5px; }
-.nvd3.nv-bullet .nv-tick line { stroke: #666; stroke-width: .5px; }
+.nvd3.nv-bullet .nv-tick line { stroke: #666; stroke-width: .9px; }
 .nvd3.nv-bullet .nv-range.nv-s0 { fill: #eee; }
 .nvd3.nv-bullet .nv-range.nv-s1 { fill: #ddd; }
 .nvd3.nv-bullet .nv-range.nv-s2 { fill: #ccc; }
@@ -196,7 +196,8 @@
     fill-opacity: 1;
 }
 .nvd3 .nv-groups path.nv-line {
-    fill: none;
+    fill: none; /* here */
+    stroke-width: 7px;
 }
 
 .nvd3 .nv-groups path.nv-area {
