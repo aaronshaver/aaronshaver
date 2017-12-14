@@ -27,7 +27,7 @@ nv.addGraph(function() {
         bottom: 110,
         right: 100
     });
-    chart.forceY([29.3, 30.7]);
+    chart.forceY([29.65, 30.65]);
 
     chart.xAxis.tickFormat(
         function(d) {
