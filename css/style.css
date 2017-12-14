@@ -1,8 +1,8 @@
 html,
 body {
     background-color: #272727;
-    width: 85vw;
-    height:85vh;
+    width: 95vw;
+    height:93vh;
 }
 p,
 h1 {
@@ -10,8 +10,8 @@ h1 {
     font-family: sans-serif;
 }
 #chart svg {
-    width: 85vw;
-    height:85vh;
+    width: 95vw;
+    height:93vh;
 }
 svg text {
     fill: #747474;
