@@ -21,6 +21,16 @@ for subelement in xmldoc.getElementsByTagName("variable"):
         if subelement.attributes['description'].value == "Station Pressure":
             pressures.append(subelement.attributes['value'].value)
 
-# TODO: write to file on S3
-# https://stackoverflow.com/questions/44183216/aws-python-lambda-function-upload-file-to-s3
-print(list(zip(times, pressures)))
+# TODO: eventually this ought to be Lambda -> API Gateway endpoint
+
+data = str(list(zip(times, pressures)))
+formatted_data = data
+formatted_data = formatted_data.replace('[', '')
+formatted_data = formatted_data.replace(']', '')
+formatted_data = formatted_data.replace(')', ']')
+formatted_data = formatted_data.replace('(', '[')
+formatted_data = formatted_data.replace('\'', '')
+
+file_name = 'data.json'
+file = open(file_name, 'w')
+file.writelines(formatted_data)
