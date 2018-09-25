@@ -7,7 +7,7 @@ class AppURLopener(urllib.request.FancyURLopener):
 
 opener = AppURLopener()
 response = opener.open(
-    'https://www.wrh.noaa.gov/mesowest/getobextXml.php?sid=KPDX&num=72')
+    'https://www.wrh.noaa.gov/mesowest/getobextXml.php?sid=KPDX&num=172')
 xmldoc = minidom.parse(response)
 
 times = []
@@ -31,6 +31,10 @@ formatted_data = formatted_data.replace(')', ']')
 formatted_data = formatted_data.replace('(', '[')
 formatted_data = formatted_data.replace('\'', '')
 
-file_name = 'data.json'
+# format as JavaScript file, put in js dir
+formatted_data = 'var data = "' + formatted_data
+formatted_data += '";'
+file_name = '../js/data.js'
+
 file = open(file_name, 'w')
 file.writelines(formatted_data)
