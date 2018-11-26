@@ -1,19 +1,3 @@
-
-// $(document).ready(function () {
-// $.ajax({
-//     type: "GET",
-//     url: "https://www.wrh.noaa.gov/mesowest/getobextJson.php?sid=KPDX",
-//     dataType: "jsonp",
-//     success: xmlParser
-//    });
-// });
-
-// function xmlParser(xml) {
-//     $(xml).find("ob").each(function () {
-//         alert($(this).find("utime").text());
-//      });
-// }
-
 nv.addGraph(function() {
   var chart = nv.models.lineChart()
                 .x(function(d) {
@@ -27,7 +11,7 @@ nv.addGraph(function() {
         bottom: 110,
         right: 100
     });
-    chart.forceY([29.65, 30.65]);
+    chart.forceY([29.40, 30.35]);
 
     chart.xAxis.tickFormat(
         function(d) {
