@@ -7,7 +7,7 @@ class AppURLopener(urllib.request.FancyURLopener):
 
 opener = AppURLopener()
 response = opener.open(
-    'https://www.wrh.noaa.gov/mesowest/getobextXml.php?sid=KPDX&num=172')
+    'https://www.wrh.noaa.gov/mesowest/getobextXml.php?sid=KPDX&num=72')
 xmldoc = minidom.parse(response)
 
 times = []
